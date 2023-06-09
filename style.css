@@ -1,0 +1,103 @@
+:root {
+  --body-background: rgb(45, 45, 45);
+  --box-background: rgb(30, 30, 30);
+  --font-color: rgb(255, 245, 220);
+  --green: #1ab26b;
+  --light-green: #1fd580;
+}
+@font-face {
+  font-family: Arg;
+  src: url(./Fonts/Argentina\ World\ Cup\ 2022\ Font.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arg;
+  background-color: var(--body-background);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.calc-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 40.625rem;
+  background-color: rgb(36, 36, 36);
+  color: var(--font-color);
+  border-radius: 0.75rem;
+  box-shadow: 19px 17px 10px -4px rgba(0, 0, 0, 0.3);
+  margin: 2%;
+}
+.calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21.875rem;
+  height: 37.5rem;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.display {
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 0.75rem;
+  background: var(--box-background);
+  width: 100%;
+  height: 8.125rem;
+  font-size: 25px;
+}
+.top {
+  color: rgb(125, 125, 125);
+  position: absolute;
+  margin-bottom: 75px;
+}
+.number,
+.op,
+.clear,
+.equals {
+  font-family: Arg, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  width: 4.625rem;
+  height: 4.625rem;
+  background-color: var(--box-background);
+  border: none;
+  border-radius: 0.75rem;
+  color: var(--font-color);
+  cursor: pointer;
+  border: 2px solid rgb(42, 42, 42);
+}
+.number:active {
+  background-color: rgb(25, 25, 25);
+}
+.op:active,
+.clear:active {
+  background-color: #686ae5;
+}
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+  padding: 1%;
+}
+.x2 {
+  width: 153px;
+}
+.diff-color {
+  background-color: #7476ff;
+  border: 2px solid #8a8cff;
+}
